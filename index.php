@@ -1,3 +1,6 @@
+<?php
+    print_r($_POST);
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -10,8 +13,17 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <div id="text-boxes">
+            <form name="form" method="post" action="">
+            <textarea name="english" rows="3" cols="70">English</textarea>
+            <br />
+            
+            <textarea name="arabic" dir="rtl" rows="3" cols="70"> اردو -عربي -فارسي</textarea>
+            <br />
+            
+            <button type="submit"  name="create">Create Quote</button>
+            <br />
+            </form>
+        </div>
     </body>
 </html>
